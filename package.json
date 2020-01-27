@@ -1,0 +1,14 @@
+{
+    "name": "laravel-feather",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "node bin/build.js"
+    },
+    "author": "Nils Poltmann <dev@nils.li>",
+    "license": "MIT",
+    "dependencies": {
+        "feather-icons": "^4.25.0"
+    }
+}

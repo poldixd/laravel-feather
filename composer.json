@@ -1,0 +1,40 @@
+{
+    "name": "poldixd/laravel-feather",
+    "keywords": [
+        "laravel",
+        "feather-icons",
+        "feather",
+        "blade"
+    ],
+    "support": {
+        "issues": "https://github.com/poldixd/laravel-feather/issues",
+        "source": "https://github.com/poldixd/laravel-feather"
+    },
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nils Poltmann",
+            "email": "dev@nils.li"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/config": "5.8.*|^6.0",
+        "illuminate/support": "5.8.*|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "poldixd\\LaravelFeather\\": "src/LaravelFeather/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "poldixd\\LaravelFeather\\Providers\\LaravelFeatherServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
