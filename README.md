@@ -1,5 +1,7 @@
 # poldixd/laravel-feather
 
+[![Build Status](https://travis-ci.org/poldixd/laravel-feather.svg?branch=master)](https://travis-ci.org/poldixd/laravel-feather)
+
 Use [Feather Icons](https://feathericons.com) as a Blade `include()`.
 
 ## Usage

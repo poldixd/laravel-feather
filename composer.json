@@ -22,9 +22,19 @@
         "php": ">=7.1",
         "illuminate/support": "~5.8.0|^6.0|^7.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "laravel/framework": "^7.0",
+        "orchestra/testbench": "^5.1"
+    },
     "autoload": {
         "psr-4": {
             "poldixd\\LaravelFeather\\": "src/LaravelFeather/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "extra": {
