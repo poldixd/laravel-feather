@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/poldixd/laravel-feather.svg?branch=master)](https://travis-ci.org/poldixd/laravel-feather)
 
-Use [Feather Icons](https://feathericons.com) as a Blade `include()` in your Laravel 5.8, 6.x or 7.x application. This Package uses [Feather 4.26.0](https://github.com/feathericons/feather/releases/tag/v4.26.0).
+Use [Feather Icons](https://feathericons.com) as a Blade `include()` in your Laravel 5.8, 6.x or 7.x application. This Package uses [Feather 4.28.0](https://github.com/feathericons/feather/releases/tag/v4.28.0).
 
 ## Installation
 
