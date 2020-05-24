@@ -1,3 +1,4 @@
 @include('feather::activity', [
-    'class' => 'custom-class'
+    'class' => 'custom-class',
+    'style' => 'color: red'
 ])

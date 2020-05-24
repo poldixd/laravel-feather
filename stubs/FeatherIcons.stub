@@ -1,0 +1,10 @@
+<?php
+
+namespace poldixd\LaravelFeather;
+
+class FeatherIcons
+{
+    public const ICONS = [
+{{ icons }}
+    ];
+}
