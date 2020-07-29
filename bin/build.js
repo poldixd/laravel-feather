@@ -22,12 +22,17 @@ icons
 
         // Create Blade Component
         fs.writeFileSync(
-            path.resolve(`${outPath}/components`, icon.name + '.blade.php'),
-            icon.toSvg({
-                class: "{{ $class ?? null }}",
-                style: "{{ $style ?? null }}",
-            })
-        )
+          path.resolve(`${outPath}/components`, icon.name + ".blade.php"),
+          icon
+            .toSvg()
+            // Remove the width and height
+            .replace(' width="24" height="24"', "")
+            // Add default / merged attribute function
+            .replace(
+              /class=\"([^"]*)\"/,
+              `{{ $attributes->merge(["class" => "$1"]) }}`
+            )
+        );
     });
 
 // Create a class from the stub with all icons 
