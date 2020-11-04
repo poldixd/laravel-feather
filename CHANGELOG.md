@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-feather` will be documented in this file
 
+## 8.1.0 - 2020-11-04
+
+- add support for php8
+
 ## 8.0.0 - 2020-09-07
 
 - add support for Laravel 8
