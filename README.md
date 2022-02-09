@@ -1,6 +1,6 @@
 # poldixd/laravel-feather
 
-Use [Feather Icons](https://feathericons.com) as a Blade `include()` or [Blade Component](https://laravel.com/docs/7.x/blade#components) in your Laravel 7.x application. This Package uses [Feather 4.28.0](https://github.com/feathericons/feather/releases/tag/v4.28.0).
+Use [Feather Icons](https://feathericons.com) as a Blade `include()` or [Blade Component](https://laravel.com/docs/7.x/blade#components) in your Laravel 8.x or 9.x application. This Package uses [Feather 4.28.0](https://github.com/feathericons/feather/releases/tag/v4.28.0).
 
 ## Installation
 
