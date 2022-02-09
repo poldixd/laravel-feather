@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-feather` will be documented in this file
 
+## 9.0.0 - 2022-02-09
+
+- added Laravel 9 support
+- Added PHP8.1 support
+- dropped PHP7.x support
+- added better namespaces for tests
+- updated phpunit
+
 ## 8.1.0 - 2020-11-04
 
 - add support for php8
