@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace poldixd\LaravelFeather\Tests;
 
 use poldixd\LaravelFeather\Providers\LaravelFeatherServiceProvider;
 use Orchestra\Testbench\TestCase as BaseTestCase;
