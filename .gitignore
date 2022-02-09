@@ -79,3 +79,4 @@ composer.phar
 /vendor/
 composer.lock
 package-lock.json
+.phpunit.result.cache
