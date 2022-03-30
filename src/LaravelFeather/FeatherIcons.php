@@ -239,6 +239,7 @@ class FeatherIcons
 'sun',
 'sunrise',
 'sunset',
+'table',
 'tablet',
 'tag',
 'target',
