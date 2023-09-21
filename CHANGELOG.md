@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-feather` will be documented in this file
 
+## 10.0.0 - 2023-09-21
+
+- added Laravel 10 support
+- dropped PHP8.0 support
+- dropped Laravel 8 support
+
 ## 9.1.0 - 2022-03-30
 
 - Updated feather-icons to 4.29.0
