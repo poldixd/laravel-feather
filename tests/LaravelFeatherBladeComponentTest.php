@@ -19,6 +19,6 @@ class LaravelFeatherBladeComponentTest extends TestCase
         $output = view('blade_component_icon_has_custom_css_class')->render();
 
         $this->assertStringContainsString('<svg', $output);
-        $this->assertStringContainsString('class="feather feather-activity custom-class" style="color: red" x-show="showIcon === true"', $output);
+        $this->assertStringContainsString('class="feather feather-activity custom-class" style="color: red;" x-show="showIcon === true"', $output);
     }
 }
