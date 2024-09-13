@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-feather` will be documented in this file
 
+## 11.0.0 - 2024-09-13
+
+- added Laravel 11 support
+- dropped PHP8.1 support
+- dropped Laravel 9 support
+
 ## 10.0.0 - 2023-09-21
 
 - added Laravel 10 support
