@@ -23,7 +23,7 @@ jobs:
 
         steps:
             -   name: Checkout code
-                uses: actions/checkout@v1
+                uses: actions/checkout@v4
 
             -   name: Install SQLite 3
                 run: |
@@ -31,7 +31,7 @@ jobs:
                     sudo apt-get install sqlite3
 
             -   name: Cache dependencies
-                uses: actions/cache@v1
+                uses: actions/cache@v4
                 with:
                     path: ~/.composer/cache/files
                     key: dependencies-laravel-${{ matrix.laravel }}-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
