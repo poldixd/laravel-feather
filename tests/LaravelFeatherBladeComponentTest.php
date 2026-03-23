@@ -4,8 +4,7 @@ namespace poldixd\LaravelFeather\Tests;
 
 class LaravelFeatherBladeComponentTest extends TestCase
 {
-    /** @test */
-    public function icon_is_included()
+    public function test_icon_is_included()
     {
         $output = view('blade_component_icon_is_included')->render();
 
@@ -13,8 +12,7 @@ class LaravelFeatherBladeComponentTest extends TestCase
         $this->assertStringContainsString('feather feather-activity', $output);
     }
 
-    /** @test */
-    public function icon_has_custom_css_class()
+    public function test_icon_has_custom_css_class()
     {
         $output = view('blade_component_icon_has_custom_css_class')->render();
 
