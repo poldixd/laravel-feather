@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-feather` will be documented in this file
 
+## 13.0.0 - 2026-03-23
+
+- added Laravel 13 support
+- migrated the test suite from PHPUnit-style tests to Pest
+
 ## 12.0.0 - 2025-02-04
 
 - added Laravel 12 support
