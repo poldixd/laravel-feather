@@ -1,10 +1,10 @@
 # poldixd/laravel-feather
 
-Use [Feather Icons](https://feathericons.com) as a Blade `include()` or [Blade Component](https://laravel.com/docs/7.x/blade#components) in your Laravel 9.x or 10.x application. This Package uses [Feather 4.28.0](https://github.com/feathericons/feather/releases/tag/v4.28.0).
+Use [Feather Icons](https://feathericons.com) as a Blade `include()` or Blade component in your Laravel 12.x or 13.x application.
 
 ## Installation
 
-Simply require poldixd/larave-feather through Composer:
+Require `poldixd/laravel-feather` through Composer:
 
 ```bash
 composer require poldixd/laravel-feather
@@ -22,11 +22,11 @@ Include the icon like a Blade template in your view:
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
 ```
 
-Optional you can use Blade Components if you're using [laravel](https://laravel.com) greater than 7.x.
+You can also use Blade components:
 
 ```php+HTML
 <!-- Your Blade view -->
-<x:feather-activity />
+<x:feather-airplay />
 
 <!-- Output: -->
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
@@ -43,7 +43,7 @@ You can include the icons with css classes.
 @include('feather::airplay', ['class' => 'my-awesome-class my-second-class'])
 
 <!-- or as a blade component -->
-<x:feather-activity class="my-awesome-class my-second-class" />
+<x:feather-airplay class="my-awesome-class my-second-class" />
 
 <!-- Output: -->
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay my-awesome-class my-second-class"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
@@ -56,7 +56,7 @@ You can include the icons with css classes.
 @include('feather::airplay', ['style' => 'color: red'])
 
 <!-- or as a blade component -->
-<x:feather-activity style="color: red" />
+<x:feather-airplay style="color: red" />
 
 <!-- Output: -->
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay" style="color: red"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg>
