@@ -1,24 +1,19 @@
 <?php
 
-namespace poldixd\LaravelFeather\Tests;
+it('includes a blade component icon', function () {
+    $output = view('blade_component_icon_is_included')->render();
 
-class LaravelFeatherBladeComponentTest extends TestCase
-{
-    public function test_icon_is_included()
-    {
-        $output = view('blade_component_icon_is_included')->render();
+    expect($output)
+        ->toContain('<svg')
+        ->toContain('feather feather-activity');
+});
 
-        $this->assertStringContainsString('<svg', $output);
-        $this->assertStringContainsString('feather feather-activity', $output);
-    }
+it('includes a blade component icon with a custom css class', function () {
+    $output = view('blade_component_icon_has_custom_css_class')->render();
 
-    public function test_icon_has_custom_css_class()
-    {
-        $output = view('blade_component_icon_has_custom_css_class')->render();
-
-        $this->assertStringContainsString('<svg', $output);
-        $this->assertStringContainsString('feather feather-activity custom-class', $output);
-        $this->assertStringContainsString('color: red', $output);
-        $this->assertStringContainsString('x-show="showIcon === true"', $output);
-    }
-}
+    expect($output)
+        ->toContain('<svg')
+        ->toContain('feather feather-activity custom-class')
+        ->toContain('color: red')
+        ->toContain('x-show="showIcon === true"');
+});

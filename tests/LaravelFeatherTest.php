@@ -1,22 +1,17 @@
 <?php
 
-namespace poldixd\LaravelFeather\Tests;
+it('includes an icon', function () {
+    $output = view('icon_is_included')->render();
 
-class LaravelFeatherTest extends TestCase
-{
-    public function test_icon_is_included()
-    {
-        $output = view('icon_is_included')->render();
+    expect($output)
+        ->toContain('<svg')
+        ->toContain('feather feather-activity');
+});
 
-        $this->assertStringContainsString('<svg', $output);
-        $this->assertStringContainsString('feather feather-activity', $output);
-    }
+it('includes an icon with a custom css class', function () {
+    $output = view('icon_has_custom_css_class')->render();
 
-    public function test_icon_has_custom_css_class()
-    {
-        $output = view('icon_has_custom_css_class')->render();
-
-        $this->assertStringContainsString('<svg', $output);
-        $this->assertStringContainsString('class="feather feather-activity custom-class" style="color: red"', $output);
-    }
-}
+    expect($output)
+        ->toContain('<svg')
+        ->toContain('class="feather feather-activity custom-class" style="color: red"');
+});
