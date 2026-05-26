@@ -1,6 +1,9 @@
 # Source spatie/laravel-backup/.github/workflows/run-tests.yml
 name: run-tests
 
+permissions:
+  contents: read
+
 on: [push, pull_request]
 
 jobs:
